@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="42.966 113.139 401.646 79.977" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="243.789" y1="113.139" x2="243.789" y2="193.116" id="gradient-0">
+      <stop offset="0" style="stop-color: rgb(212, 255, 246);"/>
+      <stop offset="1" style="stop-color: rgb(230, 255, 250);"/>
+    </linearGradient>
+  </defs>
+  <path style="fill: url(#gradient-0);" d="M 42.966 189.882 L 42.966 113.139 L 444.612 113.139 L 444.612 121.776 C 331.529 111.007 233.982 162.099 125.447 187.014 C 94.266 194.172 77.656 194.904 42.966 189.882 Z"/>
+</svg>
