@@ -1,11 +1,11 @@
-export enum RegisterOptions {
+export enum UserOptions {
   WORKERS = "WORKERS",
   EMPLOYER = "EMPLOYER",
   RECRUITER = "RECRUITER"
 }
 
-export const registerOptionLabels = {
-  [RegisterOptions.WORKERS]: "Arbeitnehmer",
-  [RegisterOptions.EMPLOYER]: "Arbeitgeber",
-  [RegisterOptions.RECRUITER]: "Temporärbüro"
+export const userOptionLabels = {
+  [UserOptions.WORKERS]: "Arbeitnehmer",
+  [UserOptions.EMPLOYER]: "Arbeitgeber",
+  [UserOptions.RECRUITER]: "Temporärbüro"
 };

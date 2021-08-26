@@ -2,7 +2,7 @@
   <div>
     <Header />
     <div>
-      <div class="bg-gradient-to-b from-bgborder-75 to-select-75 pt-24">
+      <div class="bg-gradient-to-b from-zumthor-75 to-riptide-75 pt-24">
         <h1
           class="text-center font-medium text-5xl text-oxford-blue mt-3 mb-2 px-10"
         >
@@ -10,15 +10,15 @@
         </h1>
         <img
           class="w-full"
-          src="../assets/images/home/agreement.svg"
+          src="../assets/images/content/agreement.svg"
           alt="Agreement"
         />
       </div>
-      <img src="../assets/images/home/bg-hero-edge.svg" alt="hero edge" />
+      <img src="../assets/images/content/bg-hero-edge.svg" alt="hero edge" />
     </div>
     <div class="mt-14 px-3">
       <Content
-        :options="registerOptions"
+        :options="userOptions"
         :value="selected"
         @change="selected = $event"
       />
@@ -38,18 +38,18 @@
             stepsData.steps[0].label
           }}</span>
           <span
-            class="absolute bg-bgborder-50 bg-opacity-50 rounded-full w-72 h-72 -left-14 -bottom-9"
+            class="absolute bg-zumthor-50 bg-opacity-50 rounded-full w-72 h-72 -left-14 -bottom-9"
           />
         </div>
       </div>
 
       <div>
         <img
-          src="../assets/images/home/section-top-edge.svg"
+          src="../assets/images/content/section-top-edge.svg"
           class="w-full"
           alt="section top edge"
         />
-        <div class="bg-gradient-to-b from-select-75 to-bgborder-75">
+        <div class="bg-gradient-to-b from-riptide-75 to-zumthor-75">
           <div class="flex items-end text-river-bed-50 relative ml-10">
             <span class="text-9xl z-10 font-medium">2.</span>
             <span class="text-lg pb-1 pl-7 z-10 font-medium">{{
@@ -64,7 +64,7 @@
           </div>
         </div>
         <img
-          src="../assets/images/home/section-bottom-edge.svg"
+          src="../assets/images/content/section-bottom-edge.svg"
           class="w-full"
           alt="section top edge"
         />
@@ -79,7 +79,7 @@
             stepsData.steps[2].label
           }}</span>
           <span
-            class="absolute bg-bgborder-50 rounded-full w-80 h-80 -left-28 -top-6"
+            class="absolute bg-zumthor-50 rounded-full w-80 h-80 -left-28 -top-6"
           />
         </div>
         <div class="flex justify-center ml-4 mt-4 z-10">
@@ -97,26 +97,23 @@ import Header from "../components/HeaderBar.vue";
 import Footer from "../components/FooterBar.vue";
 import Content from "../components/Content.vue";
 
-import { registerOptionLabels, RegisterOptions } from "../common/data/enums";
+import { userOptionLabels, UserOptions } from "../common/data/enums";
 import { enumToOptions } from "../common/utility";
-import { homeRegistrationSteps } from "../common/data/content";
+import { contentSteps } from "../common/data/content";
 
-const registerOptions = enumToOptions<RegisterOptions>(
-  RegisterOptions,
-  registerOptionLabels
-);
-const registerSteps = homeRegistrationSteps;
+const userOptions = enumToOptions<UserOptions>(UserOptions, userOptionLabels);
+const userSteps = contentSteps;
 
 export default Vue.extend({
   components: { Header, Footer, Content },
   data: () => ({
-    registerOptions,
-    selected: registerOptions[0].value,
-    registerSteps
+    userOptions,
+    selected: userOptions[0].value,
+    userSteps
   }),
   computed: {
     stepsData() {
-      return this.registerSteps[this.selected];
+      return this.userSteps[this.selected];
     }
   }
 });

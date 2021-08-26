@@ -7,7 +7,8 @@ module.exports = {
       white: "#ffffff",
       primary: "#319795",
       info: "#3182CE",
-      "oxford-blue": "#2D3748",
+      overview: "#2D3748",
+      footergray: "#00000033",
       "river-bed": {
         DEFAULT: "#4A5568",
         50: "#718096",
@@ -24,12 +25,6 @@ module.exports = {
         50: "#F7FAFC",
         75: "#EBF4FF",
         100: "#CBD5E0"
-      },
-      "dove-gray": {
-        DEFAULT: "#707070",
-        50: "#00000029",
-        75: "#00000033",
-        100: "#707070"
       }
     }
   },
