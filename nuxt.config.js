@@ -1,5 +1,9 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
+  server: {
+    port: 8000 // default: 3000
+  },
+
   head: {
     title: "NuxtTest",
     htmlAttrs: {
@@ -35,5 +39,10 @@ export default {
   modules: [],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {}
+  build: {},
+  tailwindcss: {
+    cssPath: "./tailwind.css",
+    exposeConfig: true,
+    viewer: true
+  }
 };

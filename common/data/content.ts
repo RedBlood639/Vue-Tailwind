@@ -1,7 +1,7 @@
 import { RegisterOptions } from "./enums";
 
 export const homeRegistrationSteps = {
-  [RegisterOptions.Workers]: {
+  [RegisterOptions.WORKERS]: {
     label: "Drei einfache Schritte zu deinem neuen Job",
     steps: [
       {
@@ -21,7 +21,7 @@ export const homeRegistrationSteps = {
       }
     ]
   },
-  [RegisterOptions.Employer]: {
+  [RegisterOptions.EMPLOYER]: {
     label: "Drei einfache Schritte zu deinem neuen Mitarbeiter",
     steps: [
       {
@@ -41,7 +41,7 @@ export const homeRegistrationSteps = {
       }
     ]
   },
-  [RegisterOptions.Recruiter]: {
+  [RegisterOptions.RECRUITER]: {
     label: "Drei einfache Schritte zur Vermittlung neuer Mitarbeiter",
     steps: [
       {

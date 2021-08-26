@@ -30,9 +30,9 @@ export default Vue.extend({
         className += " rounded-r-xl";
       }
       if (option.value === selected) {
-        className += " bg-riptide border-riptide text-white";
+        className += " bg-select border-select text-white";
       } else {
-        className += "  border-zumthor text-primary font-weight-medium";
+        className += "  border-bgborder text-primary font-weight-medium";
       }
       return className;
     }

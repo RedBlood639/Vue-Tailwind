@@ -1,11 +1,11 @@
 export enum RegisterOptions {
-  Workers = "WORKERS",
-  Employer = "EMPLOYER",
-  Recruiter = "RECRUITER"
+  WORKERS = "WORKERS",
+  EMPLOYER = "EMPLOYER",
+  RECRUITER = "RECRUITER"
 }
 
 export const registerOptionLabels = {
-  [RegisterOptions.Workers]: "Arbeitnehmer",
-  [RegisterOptions.Employer]: "Arbeitgeber",
-  [RegisterOptions.Recruiter]: "Temporärbüro"
+  [RegisterOptions.WORKERS]: "Arbeitnehmer",
+  [RegisterOptions.EMPLOYER]: "Arbeitgeber",
+  [RegisterOptions.RECRUITER]: "Temporärbüro"
 };
